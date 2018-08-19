@@ -17,3 +17,27 @@ By looking at the description of the dataset from the link, the information on e
 3 — the query. If there is no query, then this value is NO_QUERY.
 4 — the user that tweeted
 5 — the text of the tweet
+
+After taking a look at the dataset we conclude that:
+
+1) Dataset has 1.6 million entries with no null entries.
+2) Even though the dataset description mentioned neutral class, the training set has no          neutral class.
+3) 50% of the data is with negative label, and another 50% with positive label.
+
+We must first start by dropping the columns we don't need for the purpose of sentiment analysis.
+
+-> “id” column is unique ID for each tweet
+
+-> “date” column is for date info for the tweet
+
+-> “query_string” column indicates whether the tweet has been collected with any particular       query key word, but for this column, 100% of the entries are with value “NO_QUERY”
+
+-> “user” column is the twitter handle name for the user who tweeted
+
+I started by dropping the above listed columns.
+
+#Data Preparation
+As a way of sanity check, let’s look at the length of the string in text column in each entry.
+
+#Data Dictionary
+This my first draft of the dataset. It will be updated as we move on.
