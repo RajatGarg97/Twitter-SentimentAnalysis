@@ -1,0 +1,6 @@
+#Ignoring datasets
+dataset/
+
+#Jupyter notebook files
+.ipynb_checkpoints/
+implementation/.ipynb_checkpoints
